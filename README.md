@@ -1,1 +1,3 @@
 # hostel
+Veikimo principas – pačią kuriamą platformą sudaro dvi dalys: internetinė aplikacija, kuria naudosis klientai, darbuotojai, administratorius bei aplikacijų programavimo sąsaja (angl. trump. API).
+Klientas, norėdamas naudotis šia platforma, prisiregistruos prie internetinės aplikacijos ir galės susipildyti asmeninius duomenis, peržiūrėti kambarius, užpildyti rezervaciją kambariui, palikti atsiliepimą. Pagal sudarytus užsakymus, viešbučio darbuotojai galės tvirtinti arba atšaukti užsakymus ir taip pasiekti efektyvesnius darbo rezultatus. Administratorius tvirtintų darbuotojų registracijas, peržiūrėtų jų informaciją, galėtų keisti jų pareigas bei tvirtinti atsiliepimus, nes prieš paskelbimą viešai, atsiliepimas turėtų būti patvirtintas.
