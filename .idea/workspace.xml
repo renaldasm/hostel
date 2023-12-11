@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="adf3e5be-dc32-40fd-8df8-4c49b9e3918e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/hotel/HotelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/hotel/HotelDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/hotel/HotelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/hotel/HotelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/reservation/ReservationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/reservation/ReservationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/room/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/room/RoomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/room/RoomRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/room/RoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/advice/ErrorMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/advice/TokenControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/controllers/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/controllers/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/exception/TokenRefreshException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/models/ERole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/models/RefreshToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/models/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/payload/request/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/payload/request/SignupRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/payload/request/TokenRefreshRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/payload/response/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/payload/response/MessageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/payload/response/TokenRefreshResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/repository/RefreshTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/security/jwt/AuthEntryPointJwt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/security/jwt/AuthTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/security/jwt/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/security/services/RefreshTokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/security/services/UserDetailsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hostel/web/security/services/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/city/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/hotel/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/city/CityController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/city/CityDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/city/CityRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/city/CityService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/exceptions/HttpBadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/exceptions/HttpBadRequestException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/exceptions/HttpConflictException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/exceptions/HttpConflictException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/exceptions/HttpException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/exceptions/HttpException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/exceptions/HttpExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/exceptions/HttpExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/exceptions/HttpNoContentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/exceptions/HttpNoContentException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/exceptions/HttpNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/exceptions/HttpNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/reservation/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/reservation/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/reservation/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/reservation/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/reservation/ReservationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/reservation/ReservationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/reservation/ReservationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/reservation/ReservationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/securityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/tool/Tool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/tool/ToolController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/tool/ToolDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/room/RoomDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/tool/ToolRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/tool/ToolService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/user/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/user/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/user/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/user/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/user/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/saitynai/tool4you/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hostel/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/saitynai/tool4you/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hostel/ApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2WqBTs5H3d5PvrAkvCofUS025Qu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Renaldas/Desktop/hostel/src/main/java/hostel",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "coverage",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Renaldas\Desktop\hostel\src\main\java\hostel" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hostel" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="hostel" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hostel.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="adf3e5be-dc32-40fd-8df8-4c49b9e3918e" name="Changes" comment="" />
+      <created>1697450243848</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697450243848</updated>
+      <workItem from="1697450245843" duration="6657000" />
+      <workItem from="1697464972682" duration="305000" />
+      <workItem from="1698006830234" duration="2944000" />
+      <workItem from="1698011550280" duration="433000" />
+      <workItem from="1698059310494" duration="7529000" />
+      <workItem from="1698670168635" duration="9575000" />
+      <workItem from="1702293254762" duration="11064000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
