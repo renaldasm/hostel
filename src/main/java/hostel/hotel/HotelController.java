@@ -10,6 +10,7 @@ import hostel.user.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -26,6 +27,7 @@ public class HotelController {
     private HotelService hotelService;
     
     @GetMapping(path = "/hotel")
+    @PreAuthorize("hasRole('CLIENT') or hasRole('WORKER') or hasRole('ADMIN')")
     public ResponseEntity<List<HotelDTO>> getHotels() {
         List<Hotel> hotels = hotelService.findAll();
         List<HotelDTO> hotelDTOList = new ArrayList<>();
@@ -43,6 +45,7 @@ public class HotelController {
     }
 
     @GetMapping(path = "/hotel/{id}")
+    @PreAuthorize("hasRole('CLIENT') or hasRole('WORKER') or hasRole('ADMIN')")
     public ResponseEntity<HotelDTO> getHotel(@PathVariable long id) {
         Optional<Hotel> _hotel = hotelService.findById(id);
 
@@ -59,6 +62,7 @@ public class HotelController {
     }
     
     @PostMapping(path = "/hotel")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<String> addHotel(@RequestBody HotelDTO hotelDTO) {
         if (!hotelDTO.notNull()) {
             throw new HttpUnprocessableContent();
@@ -74,6 +78,7 @@ public class HotelController {
     }
     
     @PatchMapping(path = "/hotel/{hotelId}")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<String> updateHotel(@PathVariable long hotelId, @RequestBody HotelDTO hotelDTO) {
         if (!hotelDTO.atleastOneNotNull()) {
             throw new HttpUnprocessableContent();
@@ -86,6 +91,7 @@ public class HotelController {
     }
     
     @DeleteMapping(path = "hotel/{hotelId}")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<String> deleteHotel(@PathVariable long hotelId) {
         Hotel hotel = hotelService.findById(hotelId).orElseThrow(() -> new HttpNotFoundException("hotel"));
         hotelService.delete(hotel);

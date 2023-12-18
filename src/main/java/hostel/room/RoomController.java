@@ -11,6 +11,7 @@ import hostel.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -29,6 +30,7 @@ public class RoomController {
     private UserService userService;
 
     @GetMapping(path = "/hotel/{hotelId}/room")
+    @PreAuthorize("hasRole('CLIENT') or hasRole('WORKER') or hasRole('ADMIN')")
     public ResponseEntity<List<RoomDTO>> getAllHotelRooms(@PathVariable long hotelId) {
         List<Room> roomList = roomService.findByHotelId(hotelId);
         List<RoomDTO> roomDTOList = new ArrayList<>();
@@ -40,12 +42,14 @@ public class RoomController {
     }
 
     @GetMapping(path = "/hotel/{hotelId}/room/{roomId}")
+    @PreAuthorize("hasRole('CLIENT') or hasRole('WORKER') or hasRole('ADMIN')")
     public ResponseEntity<RoomDTO> getRoom(@PathVariable long hotelId, @PathVariable long roomId) {
         Room room = roomService.findByHotelIdAndRoomId(hotelId, roomId).orElseThrow(HttpNoContentException::new);
         return new ResponseEntity<>(new RoomDTO(room), HttpStatus.OK);
     }
     
     @PostMapping(path = "/hotel/{hotelId}/room")
+    @PreAuthorize("hasRole('ADMIN') or hasRole('WORKER')")
     public ResponseEntity<String> addRoom(@PathVariable long hotelId, @RequestBody RoomDTO roomDTO) {
         if (!roomDTO.notNull()) {
             throw new HttpUnprocessableContent();
@@ -59,6 +63,7 @@ public class RoomController {
     }
     
     @PatchMapping(path = "/hotel/{hotelId}/room/{roomId}")
+    @PreAuthorize("hasRole('ADMIN') or hasRole('WORKER')")
     public ResponseEntity<String> updateRoom(@PathVariable long hotelId,
                                              @PathVariable long roomId,
                                              @RequestBody RoomDTO roomDTO) {
@@ -77,6 +82,7 @@ public class RoomController {
     }
     
     @DeleteMapping(path = "/hotel/{hotelId}/room/{roomId}")
+    @PreAuthorize("hasRole('ADMIN') or hasRole('WORKER')")
     public ResponseEntity<String> deleteRoom(@PathVariable long hotelId, @PathVariable long roomId) {
         Hotel hotel = hotelService.findById(hotelId)
                 .orElseThrow(() -> new HttpNotFoundException("Provided hotel not found"));
